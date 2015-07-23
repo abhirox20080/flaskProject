@@ -7,7 +7,8 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/controller.js') }}"></script>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+        <script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
@@ -21,12 +22,12 @@
                     <div class="nav-wrapper  teal lighten-1">
                         <a href="#" class="brand-logo"><img src="../static/images/d3.png" alt="Smiley face" style="height:29%;width:29%;"></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="#">D3 and MongoDb on FLASK</a></li>
+                            <li><a href="/">D3 and MongoDb on FLASK</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
-            <div id="trial">It will be here</div>
+            <div id="trial">This is a Static Content. Below this the views are getting served</div>
             <div class="main">
                 <div ng-controller="contr">
                     <div ng-view></div>
